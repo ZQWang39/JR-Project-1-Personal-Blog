@@ -21,7 +21,6 @@
             display: flex;
             justify-content: center;
             margin-bottom: 4.5rem;
-           
                 
             .nav-links { 
                    display: flex;
@@ -107,6 +106,7 @@
 body{
     overflow-x: hidden;
 }
+
 .nav-toggle-btn {
     
     background: rgba(128, 99, 62, 0.85);
@@ -177,5 +177,9 @@ body{
    .line3{
     transform: rotate(45deg) translate(-8px,-5px);
    }
+}
+
+.home-footer-container{
+    display:none;
 }
 }
