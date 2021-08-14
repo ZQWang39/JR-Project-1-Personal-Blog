@@ -1,0 +1,127 @@
+.contact-me{
+    width: 100vw;
+    height:100vh;
+    .header-container{
+        height:20rem;
+        background: center/cover no-repeat url(../img/home-background.jpg);
+        text-align: center;
+        nav{
+            display: flex;
+            justify-content: center;
+            padding-top:7.5rem;
+            .nav-links { 
+                display: flex;
+                background: $background-color;
+                justify-content: space-around;
+                align-items: center;    
+                border-radius: 0.3rem;          
+                li {
+                    flex-shrink: 0;
+                    .current{
+                        @include highlight-current;
+                    }
+                    a{
+                     display: block;
+                     padding:0.4rem 1.5rem;
+                     color: $text-color;
+                     font-size: 1.2rem;
+                      &:hover{
+                     color:$text-hovered;
+                     background: $background-hovered;
+                    }
+                   }
+                }
+            }
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            padding-top: 2.5rem;
+            &-background{
+                width: 15rem;
+                background:$background-color; 
+                border-radius: 0.3rem;
+            }
+        }
+        
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        .contact__guide{
+            font-size: 1.2rem;
+        }
+       .contact__social-media{
+            margin-top: 1rem;
+            width:30%;
+            display: flex;
+            justify-content: space-evenly;
+            i{
+                padding:0.35rem;
+                border:solid $text-color 0.3px;
+                border-radius: 50%;
+                color:$text-color;
+                cursor: pointer;
+                &:hover{
+                    color:$background-hovered;
+                    border:solid $background-hovered 0.3px;
+                }
+            }
+        }
+        .contact__form{
+            margin-top:1rem;
+            width:70%;
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items:flex-end;
+                div{
+                    margin-bottom:2rem;
+                    width:80%;
+                    label{
+                        display: block;
+                        font-size:1.2rem;
+                        font-weight:bold;
+                    }
+                    .name,
+                    .email,
+                    .phone{
+                        @include input-form;    
+                    }
+                    .text{
+                        @include input-form($height:10rem);
+                        line-height: 1rem;
+                    }
+                   
+                }
+                .button{
+                    align-self:center;
+                    padding:0.3rem 1rem;
+                    margin-bottom: 3rem;
+                    font-size: 1rem;
+                    background-color:$background-color;
+                    color:$text-color;
+                    cursor: pointer;
+                    border:0.15rem solid $text-color;
+                    border-radius: 0.3rem;
+                    &:hover{
+                        background-color:$background-hovered;
+                    }
+                
+                }
+            }
+        }
+    }
+
+    .footer-container{
+        height:2.5rem;
+        background: $background-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}

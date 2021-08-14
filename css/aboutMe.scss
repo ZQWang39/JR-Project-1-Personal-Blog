@@ -1,0 +1,107 @@
+@import"./variables.scss";
+
+.about-me{
+    width: 100vw;
+    height:100vh;
+    .header-container{
+        height:20rem;
+        background: center/cover no-repeat url(../img/home-background.jpg);
+        text-align: center;
+        nav{
+            display: flex;
+            justify-content: center;
+            padding-top:7.5rem;
+            .nav-links { 
+                display: flex;
+                background: $background-color;
+                justify-content: space-around;
+                align-items: center;   
+                border-radius: 0.3rem;           
+                li {
+                    flex-shrink: 0;
+                    .current{
+                        @include highlight-current;
+                    }
+                    a{
+                     display: block;
+                     padding:0.4rem 1.5rem;
+                     color: $text-color;
+                     font-size: 1.2rem;
+                      &:hover{
+                     color:$text-hovered;
+                     background: $background-hovered;
+                    }
+                   }
+                }
+            }
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            padding-top: 2.5rem;
+            &-background{
+                width: 15rem;
+                background:$background-color; 
+                border-radius: 0.3rem;
+            }
+        }
+        
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        padding-top:2rem;
+        font-size: 1.2rem;
+        .content-part1{
+            width:85%;
+            margin:0.3rem auto;
+            img{
+                display: block;
+                float:left;
+                width: 13.5rem;
+                height:13.5rem;
+                border-radius: 50%;
+                margin-right:0.9rem;
+
+            }
+            p{
+                padding-bottom: 0.6rem;
+            }
+        }
+        .content-part2{
+            width:90%;
+            margin:0.3rem auto;
+            img{
+                display: block;
+                float:right;
+                width: 13.5rem;
+                height:13.5rem;
+                border-radius: 50%;
+                margin-left:0.9rem;
+
+            }
+            p{
+                padding-bottom: 0.6rem;
+            }
+        }
+    }
+    .footer-container{
+        height:2.5rem;
+        background: $background-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+@media screen and (max-width:768px){
+    .more-about-me .content-container .content-part1 img {
+        width: 8.5rem;
+        height: 8.5rem;
+      }
+      .more-about-me .content-container .content-part2 img {
+        width: 8.5rem;
+        height: 8.5rem;
+      }
+}

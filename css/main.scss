@@ -1,5 +1,8 @@
 @import"./variables.scss";
 @import "./home-style.scss";
+@import "./aboutMe.scss";
+@import "./resume.scss";
+@import "./contactMe.scss";
 
 *{
     margin: 0;
@@ -14,3 +17,81 @@ body{
     color: $text-color;
 }
 
+
+@media screen and (max-width:750px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-toggle-btn {
+        
+        background: $background-hovered;
+        width: 100%;
+        height:3rem;
+        position:absolute;
+        top:0;
+       .burger{
+           float:right;
+           cursor: pointer;
+           height:100%;
+        &:hover{
+            background-color: $background-hovered;
+        }
+           div{
+            width: 2rem;
+            height:0.3rem;
+            background:$text-color;
+            margin:0.3rem;   
+            transition: all .3s ease;
+           }
+           .line1{
+               margin-top: 0.55rem;
+           }
+       }
+    
+    }
+
+     .nav-links{
+       position: absolute;
+       top:3rem;
+       right:0;
+       flex-direction: column;
+       opacity: 0.85;
+       width:100%;
+       z-index: 1;
+       transform: translateX(100%);
+       transition: transform .3s ease-in;
+       li{
+           width: 100%;
+           text-align: center;
+           opacity: 0;
+       }
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    @keyframes navLinkFade {
+       from{
+           opacity: 0;
+           transform:translateX(50px);
+    
+       }
+       to{
+           opacity: 1;
+           transform: translateX(0px);
+       }
+       
+    }
+    .toggle{
+       .line1{
+           transform: rotate(-45deg) translate(-8px,5px);
+       }
+       .line2{
+       opacity: 0;
+       }
+       .line3{
+        transform: rotate(45deg) translate(-8px,-5px);
+       }
+     }
+    
+    }

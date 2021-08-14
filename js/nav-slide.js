@@ -19,7 +19,5 @@ export const navSlide = ()=>{
         }
     burger.addEventListener('click',addNavActive);
     
-   
-    
     }
     
