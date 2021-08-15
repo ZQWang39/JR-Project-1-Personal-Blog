@@ -18,6 +18,7 @@
 }
 .home .header-container .title__background {
   width: 20rem;
+  margin-top: 0.7rem;
   background-color: rgba(224, 184, 131, 0.85);
   flex-shrink: 0;
   border-radius: 0.3rem;
@@ -28,7 +29,7 @@
 .home .header-container nav {
   display: flex;
   justify-content: center;
-  margin-bottom: 8.4rem;
+  margin-bottom: 8.5rem;
 }
 .home .header-container nav .nav-links {
   display: flex;

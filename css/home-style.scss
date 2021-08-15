@@ -16,6 +16,7 @@
                text-align: center;
                &__background{
                   width: 20rem;
+                  margin-top: 0.7rem;
                   background-color:$background-color;
                   flex-shrink: 0;
                   border-radius: 0.3rem;
@@ -27,7 +28,7 @@
         nav{
             display: flex;
             justify-content: center;
-            margin-bottom: 8.4rem;
+            margin-bottom: 8.5rem;
             .nav-links { 
                    display: flex;
                    background: $background-color;
