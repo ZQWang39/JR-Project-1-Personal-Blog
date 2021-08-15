@@ -93,7 +93,7 @@
                     }
                     .text{
                         @include input-form($height:10rem);
-                        line-height: 1rem;
+                        resize: none;
                     }
                    
                 }

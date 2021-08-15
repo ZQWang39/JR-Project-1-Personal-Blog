@@ -545,7 +545,7 @@
   border: solid #3f3636 0.1rem;
   box-shadow: 1px 1px 1px #3f3636;
   outline: none;
-  line-height: 1rem;
+  resize: none;
 }
 .contact-me .contact-container .contact__form form .button {
   align-self: center;
