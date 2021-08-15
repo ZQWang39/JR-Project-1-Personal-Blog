@@ -420,6 +420,25 @@
   list-style-type: circle;
   margin-bottom: 0.6rem;
 }
+.resume .resume__content-container .resume__content .resume__download {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+.resume .resume__content-container .resume__content .resume__download--button {
+  width: 30%;
+  text-align: center;
+}
+.resume .resume__content-container .resume__content .resume__download--button a {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  background-color: rgba(224, 184, 131, 0.85);
+  color: whitesmoke;
+  border-radius: 0.3rem;
+}
+.resume .resume__content-container .resume__content .resume__download--button a:hover {
+  background-color: rgba(197, 142, 69, 0.75);
+}
 .resume .footer-container {
   height: 2.5rem;
   background: rgba(224, 184, 131, 0.85);
