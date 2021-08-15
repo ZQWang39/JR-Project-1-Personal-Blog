@@ -529,28 +529,28 @@
   color: rgba(197, 142, 69, 0.75);
   border: solid rgba(197, 142, 69, 0.75) 0.3px;
 }
-.contact-me .contact-container .contact__form {
+.contact-me .contact-container .contact__form--container {
   margin-top: 1rem;
   width: 70%;
 }
-.contact-me .contact-container .contact__form form {
+.contact-me .contact-container .contact__form--container .contact__form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
 }
-.contact-me .contact-container .contact__form form div {
+.contact-me .contact-container .contact__form--container .contact__form div {
   margin-bottom: 2rem;
   width: 80%;
 }
-.contact-me .contact-container .contact__form form div label {
+.contact-me .contact-container .contact__form--container .contact__form div label {
   display: block;
   font-size: 1.2rem;
   font-weight: bold;
 }
-.contact-me .contact-container .contact__form form div .name,
-.contact-me .contact-container .contact__form form div .email,
-.contact-me .contact-container .contact__form form div .phone {
+.contact-me .contact-container .contact__form--container .contact__form div .name,
+.contact-me .contact-container .contact__form--container .contact__form div .email,
+.contact-me .contact-container .contact__form--container .contact__form div .phone {
   width: 70%;
   height: 2rem;
   text-indent: 0.2rem;
@@ -558,7 +558,7 @@
   box-shadow: 1px 1px 1px #3f3636;
   outline: none;
 }
-.contact-me .contact-container .contact__form form div .text {
+.contact-me .contact-container .contact__form--container .contact__form div .text {
   width: 70%;
   height: 10rem;
   text-indent: 0.2rem;
@@ -567,7 +567,7 @@
   outline: none;
   resize: none;
 }
-.contact-me .contact-container .contact__form form .button {
+.contact-me .contact-container .contact__form--container .contact__form .button {
   align-self: center;
   padding: 0.3rem 1rem;
   margin-bottom: 3rem;
@@ -578,7 +578,7 @@
   border: 0.15rem solid #3f3636;
   border-radius: 0.3rem;
 }
-.contact-me .contact-container .contact__form form .button:hover {
+.contact-me .contact-container .contact__form--container .contact__form .button:hover {
   background-color: rgba(197, 142, 69, 0.75);
 }
 .contact-me .footer-container {

@@ -70,10 +70,10 @@
                 }
             }
         }
-        .contact__form{
+        .contact__form--container{
             margin-top:1rem;
             width:70%;
-            form{
+            .contact__form{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
