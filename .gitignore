@@ -1,3 +1,5 @@
 *.doc
 *.docx
 *.pdf
+node_modules
+.history

@@ -1,0 +1,26 @@
+$text-color:rgb(63, 54, 54);
+$title-color:rgb(26, 24, 24);
+$text-hovered:whitesmoke;
+$background-color:rgba(224, 184, 131,0.85);
+$background-hovered:rgb(197, 142, 69, .75);
+@mixin resume-title (){
+    display: inline-block;
+    margin-top:0.7rem;
+    margin-bottom: 1.2rem;
+    border-bottom: solid 0.2rem $background-color;
+    text-shadow: 1px 1px 2px $background-color;
+}
+@mixin input-form ($height:2rem){
+    width:70%;
+    height:$height;
+    text-indent: 0.2rem;
+    border:solid $text-color 0.1rem;
+    box-shadow: 1px 1px 1px $text-color;
+    outline:none;
+}
+
+@mixin highlight-current(){
+        background-color:$background-hovered;
+        color:$text-hovered;
+}
+
