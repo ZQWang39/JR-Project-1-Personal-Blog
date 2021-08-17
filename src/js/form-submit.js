@@ -22,12 +22,12 @@ let text = document.getElementById('text');
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onload = ()=>{
         console.log(xhr.responseText);
-        if(xhr.responseText ==='success'){
+        if(xhr.responseText =='Success'){
             alert('Email sent successfully');
-            name.value='',
-            email.value='',
-            phone.value='',
-            text.value=''
+            name.value='';
+            email.value='';
+            phone.value='';
+            text.value='';
         }else{
             alert('Email sent error');
         }
